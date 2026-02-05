@@ -1,0 +1,21 @@
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="uname" value="admin"></parameter>
+		<parameter name="pwd" value="admin"></parameter>
+		<parameter name="staff_type" value="admin"></parameter>
+		<parameter name="news" value="Adding news"></parameter>
+		
+		
+		<classes>
+		
+		<class name="testScript.LoginPageTest">
+				<methods>
+					<include name="verifyUserLogin"></include>
+				</methods>
+			</class>
+			
+			
+		</classes>
+	</test> <!-- Test -->
+</suite>

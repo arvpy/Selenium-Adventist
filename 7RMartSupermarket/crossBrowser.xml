@@ -1,0 +1,19 @@
+<suite name="Suite">
+	<test name="chromeTest">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="testScript.AdminUserTest">
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="edgeTest">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="testScript.AdminUserTest">
+			</class>
+		</classes>
+	</test>
+
+</suite>

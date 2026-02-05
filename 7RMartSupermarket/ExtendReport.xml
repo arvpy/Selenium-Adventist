@@ -1,0 +1,16 @@
+<suite name="Suite">
+	<listeners>
+		<listener class-name="generatereport.Listeners">
+		</listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<parameter name="uname" value="admin"></parameter>
+		<parameter name="pwd" value="admin"></parameter>
+
+		<classes>
+			<class name="testScript.LoginPageTest">
+
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite>

@@ -1,0 +1,11 @@
+<suite name="Parallel" parallel='classes' thread-count="5">
+
+	<parameter name="browser" value="chrome"></parameter>
+	<test name="parallel">
+		<classes>
+			<class name="testScript.AdminUserTest"></class>
+				<class name="testScript.HomePageTest"></class>
+				
+		</classes>
+	</test>
+</suite>
