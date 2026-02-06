@@ -1,11 +1,7 @@
 package testScript;
 
-import static org.testng.Assert.assertEquals;
-
 import java.io.IOException;
 
-import org.apache.logging.log4j.util.Constants;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

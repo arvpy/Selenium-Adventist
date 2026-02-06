@@ -9,8 +9,6 @@ import org.openqa.selenium.support.ui.Select;
 
 public class PageUtilities {
 
-	private Actions actions;
-
 	public void selectByValueDropdown(WebElement element, String value) {
 
 		Select select = new Select(element);
@@ -42,6 +40,14 @@ public class PageUtilities {
 		js.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(locator));
 
 	}
+	
+	public void scroll(WebDriver driver) {
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,8000)");
+
+	}
+
 
 	public void dragAndDrop(WebElement sourceLocator, WebElement targetLocator, WebDriver driver) {
 

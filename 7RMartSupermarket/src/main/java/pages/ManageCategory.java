@@ -1,7 +1,5 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,11 +7,14 @@ import org.openqa.selenium.support.PageFactory;
 
 import constants.Constant;
 import utilities.Fileupload;
+import utilities.PageUtilities;
 import utilities.WaitUtilility;
 
 public class ManageCategory {
 	WebDriver driver;
 	WaitUtilility waitUtilility=new WaitUtilility();
+	PageUtilities  pageUtilities=new PageUtilities();
+	
 	Fileupload fileupload= new Fileupload();
 	
 
@@ -66,9 +67,7 @@ public class ManageCategory {
 
 	public ManageCategory submit() {
 		
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,8000)");
-		
+		pageUtilities.scroll(driver);
 		waitUtilility.waitElementToBeClicked(driver, submit);
 		submit.click();
 		return this;

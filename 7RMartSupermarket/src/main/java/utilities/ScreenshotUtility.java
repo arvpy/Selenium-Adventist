@@ -20,9 +20,9 @@ public class ScreenshotUtility {
 		String basePath = System.getProperty("user.dir") + File.separator + "OutputScreenshots";
 		File f1 = new File(basePath);
 		if (!f1.exists()) {
-			f1.mkdirs();// 
+			f1.mkdirs();
 		}
-		String timeStamp = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date(0));
+		String timeStamp = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date());
 	
 		File finalDestination = new File(
                 basePath + File.separator + name + "_" + timeStamp + ".png"

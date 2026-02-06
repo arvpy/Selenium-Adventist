@@ -2,11 +2,7 @@ package testScript;
 
 import org.testng.annotations.Test;
 
-import constants.Constant;
 import constants.Messages;
-
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 
 import pages.HomePage;
 import pages.LoginPage;
